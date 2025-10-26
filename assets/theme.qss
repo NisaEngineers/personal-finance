@@ -1,0 +1,109 @@
+/* Base */
+QWidget {
+    background-color: #0f1222;
+    color: #e8eaf6;
+    font-family: "Inter", "Segoe UI", "Roboto", "Helvetica", "Arial";
+    font-size: 11pt;
+}
+
+QMainWindow::separator {
+    background-color: #1b1e35;
+    height: 1px;
+}
+
+/* Tabs */
+QTabWidget::pane {
+    border: 1px solid #1b1e35;
+    border-radius: 10px;
+    background: #141733;
+}
+QTabBar::tab {
+    background: #0f1222;
+    color: #cfd2ff;
+    padding: 8px 16px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin: 2px;
+}
+QTabBar::tab:selected {
+    background: #1a1e3a;
+    color: #ffffff;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #2a3163;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-weight: bold;
+    border: 1px solid #39407a;
+}
+QPushButton:hover {
+    background-color: #374084;
+}
+QPushButton:pressed {
+    background-color: #1f2550;
+}
+
+/* Inputs */
+QLineEdit, QComboBox, QDateEdit, QDoubleSpinBox {
+    background-color: #171a32;
+    color: #ffffff;
+    border: 1px solid #2a3163;
+    border-radius: 6px;
+    padding: 6px;
+}
+QComboBox QAbstractItemView {
+    background-color: #141733;
+    color: #ffffff;
+    selection-background-color: #2a3163;
+}
+
+/* Tables */
+QTableWidget {
+    background-color: #121527;
+    alternate-background-color: #171a32;
+    color: #e8eaf6;
+    gridline-color: #2a3163;
+    border: 1px solid #1b1e35;
+    border-radius: 8px;
+}
+QHeaderView::section {
+    background-color: #1a1e3a;
+    color: #cfd2ff;
+    padding: 6px;
+    border: none;
+}
+
+/* Group boxes (cards) */
+QGroupBox {
+    border: 1px solid #1b1e35;
+    border-radius: 12px;
+    margin-top: 14px;
+    background: #141733;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 6px;
+    color: #aeb3ff;
+    font-weight: bold;
+}
+
+/* Accent cards */
+.card-green { background-color: #0f3a2f; border: 1px solid #1e7a63; }
+.card-red   { background-color: #3a0f1a; border: 1px solid #7a1e3a; }
+.card-blue  { background-color: #0f2740; border: 1px solid #1e4a7a; }
+.card-gold  { background-color: #3a2e0f; border: 1px solid #7a5f1e; }
+
+/* Floating action button */
+#fab {
+    background-color: #ff6d00;
+    color: #0f1222;
+    border-radius: 24px;
+    padding: 10px 16px;
+    font-weight: bold;
+    border: none;
+}
+#fab:hover { background-color: #ff8100; }
